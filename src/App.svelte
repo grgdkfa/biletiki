@@ -11,6 +11,7 @@
   import { startSignal } from './lib/stores/startSignal';
   import type { ComputeParams, WorkerMessage } from './types';
   import ErrorMessage from './lib/ErrorMessage.svelte';
+  import Header from './lib/Header.svelte';
 
   export let worker: Worker;
 
@@ -63,6 +64,7 @@
 </script>
 
 <Styles></Styles>
+<Header></Header>
 <Container lg>
   <FormulaInputs></FormulaInputs>
   {#if $appState.error}

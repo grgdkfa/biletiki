@@ -1,5 +1,6 @@
 <script lang="ts">
-    import { Button, Input, InputGroup, InputGroupText } from '@sveltestrap/sveltestrap';
+    import { Button, Input, InputGroup, InputGroupText, Icon, Tooltip } from '@sveltestrap/sveltestrap';
+    import { _ } from 'svelte-i18n';
     import { appState } from './stores/appState';
     import { startSignal } from './stores/startSignal';
     import { loadSignal } from './stores/loadSignal';
@@ -34,12 +35,30 @@
         <InputGroupText>=</InputGroupText>
         <Input type="text" bind:value="{rightFormula}" bind:disabled={$appState.isComputing}/>
     </InputGroup>
-    <Button color="primary" on:click={start} bind:disabled={$appState.isComputing}>Go</Button>
+    <Button color="primary" on:click={start} bind:disabled={$appState.isComputing}><Icon name="brush"/></Button>
 </div>
 <div class="render-settings">
-    <Input type="checkbox" bind:checked="{showGradients}" label="Show ramps"/>
-    <Input type="checkbox" bind:checked="{highlightLucky}" label="Highlight lucky"/>
+    <div>
+        <Input type="checkbox" bind:checked="{showGradients}" label={$_('show_gradients')}/>
+        <Button id="settings-gradients" type="info" size="sm">
+            <Icon name="question"/>
+        </Button>
+    </div>
+    <div>
+        <Input type="checkbox" bind:checked="{highlightLucky}" label={$_('highlight_lucky')}/>
+        <Button id="settings-highlight" type="info" size="sm">
+            <Icon name="question"/>
+        </Button>
+    </div>
 </div>
+
+<Tooltip target="settings-gradients" placement="bottom">
+    {$_('show_gradients_help')}
+</Tooltip>
+
+<Tooltip target="settings-highlight" placement="bottom">
+    {$_('highlight_lucky_help')}
+</Tooltip>
 
 <style>
     .formula {
@@ -52,5 +71,10 @@
         justify-content: flex-start;
         gap: 1rem;
         margin-top: 0.4rem;
+    }
+
+    .render-settings div {
+        display: flex;
+        align-items: center;
     }
 </style>

@@ -1,5 +1,6 @@
 import './app.css'
 import App from './App.svelte'
+import './i18n'
 import { loadSignal } from './lib/stores/loadSignal';
 import MainWorker from './lib/workers/mainWorker?worker'
 

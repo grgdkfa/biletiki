@@ -1,0 +1,15 @@
+{
+    "show_gradients": "Show gradients",
+    "show_gradients_help": "Display the difference between the parts of the equation. The darker the greater the difference",
+    "highlight_lucky": "Highlight lucky tickets",
+    "highlight_lucky_help": "Lucky tickets will be marked with red dots",
+    "lucky_tickets": "Lucky tickets:",
+    "error": "Error:",
+    "copied": "URL copied!",
+    "help_title": "Readme",
+    "help_1": "This is a visualizer of the distribution of lucky tickets.",
+    "help_2": "The following variables are available:",
+    "help_3": "Enter the formulas for the left and right parts of the equality that will determine whether the ticket is a lucky ticket or not.",
+    "help_4": "i.e. first three digits of a ticket number are <code>a</code>, <code>b</code> and <code>c</code>, three last digits - <code>x</code>, <code>y</code> and <code>z</code>. The left three-digit number is denoted by <code>l</code>, right one - <code>r</code>.",
+    "help_5": "You canuse any <a href=\"https://mathjs.org/docs/expressions/syntax.html\" target=\"_blank\">operators</a> and <a href=\"https://mathjs.org/docs/reference/functions.html\" target=\"_blank\">functions</a> from <a href=\"https://mathjs.org/\" target=\"_blank\">math.js</a>."
+}

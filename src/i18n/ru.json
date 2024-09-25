@@ -1,0 +1,15 @@
+{
+    "show_gradients": "Показать градиент",
+    "show_gradients_help": "Отображать разницу между частями уравнения. Чем темнее - тем больше разница",
+    "highlight_lucky": "Подсветить счастливые билеты",
+    "highlight_lucky_help": "Счастливые билеты будут выделены красным цветом",
+    "lucky_tickets": "Счастливых билетов:",
+    "error": "Ошибка: ",
+    "copied": "Ссылка скопирована!",
+    "help_title": "Справка",
+    "help_1": "Это визуализатор распределения счастливых билетиков.",
+    "help_2": "Введите формулы для левой и правой частей равенства, которое определит, счастливый билет или нет.",
+    "help_3": "Доступны следующие переменные:",
+    "help_4": "т.е. первые три цифры номера - это <code>a</code>, <code>b</code> и <code>c</code>, три последние - <code>x</code>, <code>y</code> и <code>z</code>. Левое трёхзначное число обозначается <code>l</code>, правое - <code>r</code>.",
+    "help_5": "Также можно использовать любые <a href=\"https://mathjs.org/docs/expressions/syntax.html\" target=\"_blank\">операторы</a> и <a href=\"https://mathjs.org/docs/reference/functions.html\" target=\"_blank\">функции</a> из <a href=\"https://mathjs.org/\" target=\"_blank\">math.js</a>."
+}
