@@ -40,14 +40,14 @@
 <div class="render-settings">
     <div>
         <Input type="checkbox" bind:checked="{showGradients}" label={$_('show_gradients')}/>
-        <Button id="settings-gradients" type="info" size="sm">
-            <Icon name="question"/>
+        <Button id="settings-gradients" type="info" outline size="sm">
+            <Icon name="info-lg"/>
         </Button>
     </div>
     <div>
         <Input type="checkbox" bind:checked="{highlightLucky}" label={$_('highlight_lucky')}/>
-        <Button id="settings-highlight" type="info" size="sm">
-            <Icon name="question"/>
+        <Button id="settings-highlight" type="info" outline size="sm">
+            <Icon name="info-lg"/>
         </Button>
     </div>
 </div>

@@ -7,7 +7,7 @@
 </script>
 
 <div class="stats">
-    <Alert color="secondary">
+    <Alert color="secondary" class="stats-alert">
         <div class="stats-wrapper">
             <span>{$_('lucky_tickets')} {$resultState.lucky} ({($resultState.lucky * 100 / 1000000).toFixed(2)}%)</span>
             <Button type="primary" on:click={() => copyText(location.href)} id="share-button">
@@ -21,6 +21,9 @@
 </div>
 
 <style>
+    .stats {
+        margin-top: 0.5rem;
+    }
     .stats-wrapper {
         display: flex;
         justify-content: space-between;
