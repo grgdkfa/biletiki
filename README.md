@@ -4,6 +4,6 @@ So in Russia, bus ticket numbers consist of 6 decimal digits. The ticket is cons
 
 If you plot lucky numbers on a 1000x1000 grid, it forms a beautiful pattern:
 
-[!Lucky tickets pattern](public/example.png)
+![Lucky tickets pattern](public/example.png)
 
 This app lets you visualize patterns for different lucky number rules.
